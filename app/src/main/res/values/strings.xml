@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">ParcelableExample</string>
+    <string name="Jurusan">Choose a Majors</string>
+
+    <string-array name="jurusan_list">
+        <item>Akuntansi</item>
+        <item>Teknik Mesin</item>
+        <item>Administrasi Bisnis</item>
+        <item>Teknologi Informasi</item>
+        <item>Teknik Elektro</item>
+        <item>Teknik Sipil</item>
+        <item>Teknik Kimia</item>
+    </string-array>
 </resources>

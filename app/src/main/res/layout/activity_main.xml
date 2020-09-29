@@ -42,29 +42,25 @@
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:onClick="genderClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDOB">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="169dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:text="Male" />
 
-            <RadioButton
-                android:id="@+id/rbMale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Male" />
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female" />
 
-            <RadioButton
-                android:id="@+id/rbFemale"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Female" />
-        </LinearLayout>
     </RadioGroup>
 
     <Spinner
@@ -75,6 +71,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:spinnerMode="dropdown"
+        android:entries="@array/jurusan_list"
+        android:prompt="@string/Jurusan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rgGender" />
@@ -87,6 +85,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="Save"
+        android:onClick="saveClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerDropdown" />
